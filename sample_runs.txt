@@ -1,0 +1,48 @@
+SAMPLE RUNS (illustrative)
+
+1. Array Stack - Underflow
+Choose an implementation: 1
+Enter stack capacity: 2
+Choose an operation: 2
+Error: Stack underflow: cannot pop from an empty stack.
+Current state: [] (top is empty)
+
+2. Array Stack - Overflow
+Choose an operation: 1
+Enter value to push: A
+Value pushed.
+Current state: ['A'] (top is A)
+Choose an operation: 1
+Enter value to push: B
+Value pushed.
+Current state: ['A', 'B'] (top is B)
+Choose an operation: 1
+Enter value to push: C
+Error: Stack overflow: cannot push to a full stack.
+Current state: ['A', 'B'] (top is B)
+
+3. Circular Array Queue - Wrap-around
+Choose an implementation: 3
+Enter queue capacity: 3
+Enqueue A, B, C; dequeue A; enqueue D.
+The logical queue is now: Front -> ['B', 'C', 'D'] <- Rear
+D is stored in the reused array position at the beginning of the circular buffer.
+
+4. Linked Queue - Underflow
+Choose an implementation: 4
+Choose an operation: 2
+Error: Queue underflow: cannot dequeue from an empty queue.
+Current state: Front -> None (empty)
+
+5. Balanced Parentheses
+Input: {[()]}
+Output: The parentheses are balanced.
+
+Input: {[(])}
+Output: The parentheses are NOT balanced.
+
+6. Print Queue
+Add jobs: P01 (3 pages), P02 (5 pages), P03 (2 pages).
+Waiting order: P01, P02, P03
+Print next job: P01 (3 pages)
+Remaining jobs: P02, P03

@@ -1,0 +1,3 @@
+# Analysis Question
+
+The linked-list stack performs push and pop operations at the head because the head can be accessed and updated directly in **O(1)** time. If these operations were performed at the tail of a singly linked list, removing the last node would require traversing the list, which takes **O(n)** time. The array queue must be circular so that empty spaces at the beginning of the array can be reused after dequeue operations. Using modulo arithmetic allows the front and rear positions to wrap around to the beginning without shifting elements, keeping enqueue and dequeue operations at **O(1)** time.
